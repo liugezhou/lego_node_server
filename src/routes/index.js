@@ -26,12 +26,13 @@ router.get('/api/db-check', async (ctx, next) => {
     ctx.body = {
         errno: 0,
         data: {
-            name: 'biz editor sever',
+            name: 'liugezhou node study sever',
             version: packageInfo.version,
             ENV,
             redisConn: redisTestVal != null,
             mysqlConn: mysqlRes.length > 0,
             mongodbConn,
+            mysqlRes: JSON.stringify(mysqlRes),
         },
     }
 })

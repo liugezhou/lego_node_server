@@ -1,6 +1,6 @@
 /**
  * @description 连接 redis
- * @author 双越
+ * @author liugezhou
  */
 
 const redis = require('redis')

@@ -1,6 +1,6 @@
 /**
  * @description 封装 mongoose ，连接 mongodb
- * @author 双越
+ * @author liugezhou
  */
 
 const mongoose = require('mongoose')
@@ -30,7 +30,7 @@ db.on('error', err => {
     console.error('mongoose connect error', err)
 })
 
-// // 演示注释掉即可
+// 演示注释掉即可
 // db.once('open', () => {
 //     // 用以测试数据库连接是否成功
 //     console.log('mongoose connect success')

@@ -1,6 +1,6 @@
 /**
  * @description res 错误信息配置
- * @author 双越
+ * @author liugezhou
  */
 
 const errorInfos = require('./error')

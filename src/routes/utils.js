@@ -9,15 +9,15 @@ const router = require('koa-router')()
 const loginCheck = require('../middlewares/loginCheck')
 
 // controller
-const uploadImg = require('../controller/utils/uploadImg')
+// const uploadImg = require('../controller/utils/uploadImg')
 
 // 路由前缀
 router.prefix('/api/utils')
 
 // 上传图片（form-data 形式，支持多文件上传）
-router.post('/upload-img', loginCheck, async ctx => {
-    const res = await uploadImg(ctx.req)
-    ctx.body = res
-})
+// router.post('/upload-img', loginCheck, async ctx => {
+//     const res = await uploadImg(ctx.req)
+//     ctx.body = res
+// })
 
 module.exports = router

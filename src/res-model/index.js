@@ -1,6 +1,6 @@
 /**
  * @description res model
- * @author 双越老师
+ * @author liugezhou
  */
 
 /**

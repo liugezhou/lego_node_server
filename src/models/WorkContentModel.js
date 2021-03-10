@@ -1,6 +1,6 @@
 /**
  * @description 作品内容 Model ，存储到 Mongodb
- * @author 双越
+ * @author liugezhou
  */
 
 const mongoose = require('../db/mongoose')
@@ -18,7 +18,7 @@ const contentSchema = mongoose.Schema(
     { timestamps: true }
 )
 
-// 为发布的内容
+// 未发布的内容
 const WorkContentModel = mongoose.model('workContent', contentSchema)
 
 // 发布的内容

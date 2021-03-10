@@ -1,6 +1,6 @@
 /**
  * @description dev 配置
- * @author 双越
+ * @author liugezhou
  */
 
 module.exports = {
@@ -8,7 +8,7 @@ module.exports = {
     mongodbConf: {
         host: 'localhost',
         port: '27017',
-        dbName: 'testdb',
+        dbName: 'imooc_lego_course',
     },
 
     // redis 连接配置

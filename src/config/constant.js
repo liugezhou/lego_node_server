@@ -1,14 +1,14 @@
 /**
  * @description 常量配置
- * @author 双越
+ * @author liugezhou
  */
 
 module.exports = {
     // 密码加密 秘钥
-    PASSWORD_SECRET: '123',
+    PASSWORD_SECRET: 'liugezhou',
 
     // jwt 秘钥
-    JWT_SECRET: 'xxx',
+    JWT_SECRET: 'liugezhoudejwt',
 
     // jwt 可忽略的 path：全部忽略即可，需要登录验证的，自己用 loginCheck
     JWT_IGNORE_PATH: [/\//],

@@ -1,6 +1,6 @@
 /**
  * @description res 错误信息配置 users
- * @author 双越
+ * @author liugezhou
  */
 
 // errno: 1200x

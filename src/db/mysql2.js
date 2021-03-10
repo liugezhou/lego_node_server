@@ -1,6 +1,6 @@
 /**
  * @description mysql2 连接测试（暂时不用，先保留）
- * @author 双越
+ * @author liugezhou
  */
 
 const mysql = require('mysql2/promise')
@@ -12,7 +12,9 @@ async function testMysqlConn() {
     return rows
 }
 
-// ;(async () => {
+// testMysqlConn().then(res => console.log(res))
+
+// ; (async () => {
 //     const rows = await testMysqlConn()
 //     console.log(rows)
 // })()

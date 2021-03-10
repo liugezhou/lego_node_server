@@ -1,6 +1,6 @@
 /**
  * @description 封装 jwt 插件
- * @author 双越
+ * @author liugezhou
  */
 
 const jwtKoa = require('koa-jwt')
