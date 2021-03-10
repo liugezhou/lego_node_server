@@ -7,7 +7,7 @@ const os = require('os')
 const cpuCoreLength = os.cpus().length // CPU 几核
 
 module.exports = {
-    name: 'biz-editor-server',
+    name: 'lego-node-server',
     script: 'bin/www',
     // watch: true,
     ignore_watch: ['node_modules', '__test__', 'logs'],
