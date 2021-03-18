@@ -18,7 +18,7 @@ if (isTestLocal) {
 let TOKEN = ''
 
 // 测试机 host
-const REMOTE_HOST = 'http://182.92.168.192:8081/api/db-check'
+const REMOTE_HOST = 'http://182.92.168.192:8081/'
 
 /**
  * 发送请求
