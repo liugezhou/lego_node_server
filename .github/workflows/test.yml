@@ -7,7 +7,7 @@ name: test
 on:
     push:
         branches:
-            - master
+            - main
         paths:
             - '.github/workflows/**'
             - '__test__/**'

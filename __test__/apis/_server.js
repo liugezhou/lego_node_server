@@ -1,6 +1,6 @@
 /**
  * @description jest server
- * @author 双越老师
+ * @author liugezhou
  */
 
 const axios = require('axios')
@@ -18,7 +18,7 @@ if (isTestLocal) {
 let TOKEN = ''
 
 // 测试机 host
-const REMOTE_HOST = 'http://182.92.xxx.xxx:8081'
+const REMOTE_HOST = 'http://182.92.168.192:8081/api/db-check'
 
 /**
  * 发送请求
