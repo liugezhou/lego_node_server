@@ -2,4 +2,3 @@
 node_modules
 logs
 .docker-volumes
-wfp_test
