@@ -15,11 +15,11 @@ const { mailAlarm } = require('./alarm/index')
 
 // 路由
 const index = require('./routes/index')
-const users = require('./routes/users')
-const works = require('./routes/works')
-const utils = require('./routes/utils')
-const channel = require('./routes/channel')
-const templates = require('./routes/templates')
+// const users = require('./routes/users')
+// const works = require('./routes/works')
+// const utils = require('./routes/utils')
+// const channel = require('./routes/channel')
+// const templates = require('./routes/templates')
 
 // 安装预防，设置必要的 http 头
 app.use(helmet())
@@ -60,11 +60,11 @@ app.use(
 
 // routes
 app.use(index.routes(), index.allowedMethods())
-app.use(users.routes(), users.allowedMethods())
-app.use(works.routes(), works.allowedMethods())
-app.use(utils.routes(), utils.allowedMethods())
-app.use(channel.routes(), channel.allowedMethods())
-app.use(templates.routes(), templates.allowedMethods())
+// app.use(users.routes(), users.allowedMethods())
+// app.use(works.routes(), works.allowedMethods())
+// app.use(utils.routes(), utils.allowedMethods())
+// app.use(channel.routes(), channel.allowedMethods())
+// app.use(templates.routes(), templates.allowedMethods())
 app.use(onNotFound) // 404 路由，注册在最后
 
 // error-handling

@@ -6,7 +6,7 @@
 const sendMail = require('../vendor/sendMail')
 const { adminMails } = require('../config/index')
 const { isPrd, isDev, isTest } = require('../utils/env')
-const { cacheSet, cacheGet } = require('../cache/index')
+// const { cacheSet, cacheGet } = require('../cache/index')
 
 /**
  * 检查缓存
