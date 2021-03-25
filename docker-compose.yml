@@ -14,7 +14,7 @@ services:
         ports:
             - 6378:6379 # 宿主机可以用 127.0.0.1:6378 即可连接容器中的数据库
         environment:
-            - TZ=Asia/Shanghai # 设置时区
+            - TZ=Asia/Beijing # 设置时区
     editor-mysql:
         image: mysql # 引用官网 mysql 镜像
         container_name: editor-mysql
@@ -28,21 +28,21 @@ services:
             - .docker-volumes/mysql/data:/var/lib/mysql
             - ./mysql/init:/docker-entrypoint-initdb.d/ # 初始化 sql
         environment:
-            - MYSQL_DATABASE=testdb # 初始化容器时创建数据库
-            - MYSQL_ROOT_PASSWORD=Mysql_2019
+            - MYSQL_DATABASE=imooc_lego_course # 初始化容器时创建数据库
+            - MYSQL_ROOT_PASSWORD=liugezhou1205
             # - MYSQL_USER=shuangyue #创建 test 用户
             # - MYSQL_PASSWORD=shuangyue #设置 test 用户的密码
-            - TZ=Asia/Shanghai # 设置时区
+            - TZ=Asia/Beijing # 设置时区
     editor-mongo:
         image: mongo # 引用官网 mongo 镜像
         container_name: editor-mongo
-        restart: always
+        restart: always #出错则重启
         volumes:
             - '.docker-volumes/mongo/data:/data/db' # 数据持久化
         environment:
-            - MONGO_INITDB_DATABASE=testdb
+            - MONGO_INITDB_DATABASE=imooc_lego_course
             # - MONGO_INITDB_ROOT_USERNAME=root
             # - MONGO_INITDB_ROOT_PASSWORD=123456
-            - TZ=Asia/Shanghai # 设置时区
+            - TZ=Asia/Beijing # 设置时区
         ports:
             - '27016:27017' # 宿主机可以用 127.0.0.1:27016 即可连接容器中的数据库

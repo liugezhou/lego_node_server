@@ -7,7 +7,7 @@ use mysql;
 SET SQL_SAFE_UPDATES=0; -- 解除安全模式，测试环境，没关系
 update user set host='%' where user='root';
 flush privileges;
-ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'Mysql_2019'; -- 密码参考 docker-compose.yml
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'liugezhou1205'; -- 密码参考 docker-compose.yml
 flush privileges;
 
 select "init end...";

@@ -1,9 +1,9 @@
 # Dockerfile
-FROM node:latest
+FROM node:14
 WORKDIR /app
 COPY . /app
 
 # 设置时区
-RUN ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime && echo 'Asia/Shanghai' >/etc/timezone
+RUN ln -sf /usr/share/zoneinfo/Asia/Beijing /etc/localtime && echo 'Asia/Beijing' >/etc/timezone
 
 CMD npm i && npm run prd-dev && npx pm2 log
