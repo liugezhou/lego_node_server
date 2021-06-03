@@ -1,24 +1,12 @@
-# biz-editor-server
+### Intruduce
+> 慕课网的一门付费课程，老师讲课逻辑混乱，啰里八嗦，是我最大的感受。    
+> 好好弄懂这个项目的细节是我的追求。    
+> koa2框架搭建的一套后端管理，项目是在开源代码中done下来后，跟随课程内容的部分代码修改。
 
-![test badge](https://github.com/imooc-lego/biz-editor-server/workflows/test/badge.svg)
 
-B 端和编辑器 server - 开源代码，欢迎 star ！
-
-## 本地运行
-
--   安装 `npm i`
--   配置本地数据库，在 `src/config/envs/dev.js`
--   运行 `npm run dev`
-
-## 注意事项
-
-代码开源之后，屏蔽了一些信息（如线上数据库、第三方服务 secret 、服务器等）。所以以下流程无法顺利执行：
-
--   从 0 到 1 的设计过程，commit 记录
--   pre commit 检查：单元测试、接口测试
--   CI/CD
--   发布到测试机
--   发布上线/回滚
--   运维和监控
-
-想了解这些，可去关注我们的《Web 前端架构师》课程，其中都有详细讲解。
+### 配置
+> src/config/envs/dev.js:这里配置了mysql、redies、mongodb三大数据库的本地信息。 
+> 测试mysql连接： node src/db/mysql2.js     
+> 测试sequelize连接mysql： node src/db/seq/utils/conn-test.js   
+> src/db/seq/utils/sync-alter.js：此文件为同步model至数据库。   
+> 测试mongoose连接：node src/db/mongoose.js

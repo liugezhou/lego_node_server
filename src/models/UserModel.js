@@ -4,7 +4,7 @@
  */
 
 const seq = require('../db/seq/seq')
-const { STRING, DATE, BOOLEAN } = require('../db/seq/types')
+const { STRING, DATE, INTEGER, BOOLEAN } = require('../db/seq/types')
 
 const User = seq.define('user', {
     username: {
@@ -21,7 +21,7 @@ const User = seq.define('user', {
     phoneNumber: {
         type: STRING,
         allowNull: false,
-        unique: 'username',
+        unique: 'phoneNumber',
         comment: '手机号，唯一',
     },
     nickName: {
@@ -29,7 +29,7 @@ const User = seq.define('user', {
         comment: '昵称',
     },
     gender: {
-        type: STRING,
+        type: INTEGER,
         allowNull: false,
         defaultValue: 0,
         comment: '性别（1 男性，2 女性，0 保密）',

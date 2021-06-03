@@ -1,6 +1,6 @@
 /**
  * @description 配置 sequelize ，连接 mysql
- * @author 双越
+ * @author liugezhou
  */
 
 const Sequelize = require('sequelize')
@@ -17,7 +17,7 @@ const conf = {
 
 // 测试环境不打印日志
 if (isTest) {
-    conf.logging = () => {} // 默认是 console.log
+    conf.logging = () => { } // 默认是 console.log
 }
 
 // 线上环境用 链接池
