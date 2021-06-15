@@ -1,6 +1,6 @@
 /**
  * @description 作品 Model
- * @author 双越
+ * @author liugezhou
  */
 
 const seq = require('../db/seq/seq')

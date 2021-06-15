@@ -1,6 +1,6 @@
 /**
  * @description user model
- * @author 双越
+ * @author liugezhou
  */
 
 const seq = require('../db/seq/seq')
